@@ -1,0 +1,23 @@
+
+# R and RStudio temporary files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Restricted ADNI datasets
+data/
+
+# Experiment outputs - review before publishing
+results/
+
+# Data and serialized R objects
+*.csv
+*.rds
+*.RDS
+*.rda
+*.RData
+
+# Temporary files
+*.tmp
+*.log
