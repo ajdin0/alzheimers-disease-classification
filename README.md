@@ -176,19 +176,53 @@ Reproducing the experiments requires authorized ADNI dataset access, appropriate
 
 
 
-\## Research Report
 
+\## Research Publications
 
+This repository contains implementations associated with two related academic research studies using the Alzheimer's Disease Neuroimaging Initiative (ADNI) dataset.
 
-\*\*A Comparative Study of Machine Learning Models for Alzheimer's Disease Classification\*\*
+\### Study 1 — Comparative Machine Learning
 
+**A Comparative Study of Machine Learning Models for Alzheimer's Disease Classification**
 
+**Authors:** Adil Hasanbašić and Ajdin Širbegović
 
-Authors: Adil Hasanbašić and Ajdin Širbegović
+[Read the full research paper](docs/CS512_AdilH_AjdinS_FinalProjectReport.pdf)
 
+This study compares k-Nearest Neighbors, LASSO Logistic Regression, and Random Forest for CN vs AD classification.
 
+The research emphasizes:
+- Leakage-aware preprocessing
+- Feature selection using Boruta
+- Repeated stratified evaluation
+- Sensitivity-focused model comparison
+- Decision-threshold analysis
 
-The study investigates sensitivity-focused classification, leakage-aware preprocessing, feature relevance, and comparative model evaluation.
+The highest reported accuracy was 97.1%, achieved by kNN in the evaluated setting.
+
+\### Study 2 — Statistical Analysis and Logistic Regression
+
+**Chi-square Analysis and Logistic Regression for CN vs AD Classification Using ADNI Data**
+
+**Author:** Ajdin Širbegović
+
+[Read the full research paper](docs/Chi-square%20analysis%20and%20logistic%20regression%20for%20CN%20vs%20AD%20classification%20using%20ADNI%20data.pdf)
+
+This follow-up study investigates statistical associations between Alzheimer's disease diagnosis and demographic, genetic, and clinical variables.
+
+It includes:
+- Chi-square hypothesis testing
+- Binary logistic regression
+- Odds ratio analysis
+- Likelihood ratio testing
+- Statistical analysis of features used in the original ML research
+
+APOE4, age, education, and marital status were identified as significant predictors in the fitted logistic regression analysis.
+
+The logistic regression achieved 72.7% apparent accuracy, evaluated on its training dataset. This is not an independent estimate of generalization performance.
+
+**Related implementation:** `scripts/14_chi_square_logistic_assignment.R`
+
 
 
 
